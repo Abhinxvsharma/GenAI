@@ -1,13 +1,13 @@
 # task=1
 
-friday = {"Alice", "Bob", "Charlie"}
-saturday = {"Charlie", "David", "Eve"}
-All_guest= friday.union(saturday)
-print("guest attending one night:",All_guest)
+# friday = {"Alice", "Bob", "Charlie"}
+# saturday = {"Charlie", "David", "Eve"}
+# All_guest= friday.union(saturday)
+# print("guest attending one night:",All_guest)
 
 
-both_nights= friday.intersection(saturday)
-print("Guests attending both nights:",both_nights)
+# both_nights= friday.intersection(saturday)
+# print("Guests attending both nights:",both_nights)
 
 
 # task=2
