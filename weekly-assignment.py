@@ -175,8 +175,20 @@
 
 # q18  
 
+from random import random
 
 
+a=random.randint(1,100)
+print("Guess the number between 1 and 100")
+while True:
+    guess=int(input("Enter your guess: "))
+    if guess<a:
+        print("Too low! Try again.")
+    elif guess>a:
+        print("Too high! Try again.")
+    else:
+        print("Congratulations! You guessed the number.")
+        break
 
 # q19
 
@@ -209,3 +221,12 @@
 
 
 
+# def odd_even(a):
+#     if a%2==0:
+#         return("Even number")
+#     else:   
+#         return("Odd number")
+
+# b=int(input("enter the value: "))
+
+# print(odd_even(b))
