@@ -29,19 +29,19 @@
 
 
 
-# x=input("Enter the first name: ")
-# y=input("Enter the surname: ")
+x=input("Enter the first name: ")
+y=input("Enter the surname: ")
 
 
-# if(x==y):
-#     print("Both numbers are equal")
-# else:
-#     print("Both numbers are not equal")
+if(x==y):
+    print("Both names are equal")
+else:
+    print("Both names are not equal")
 
-#     if(x>y):
-#         print(f"{x} is greater than {y}")
-#     else:
-#         print(f"{y} is greater than {x}")
+    if(x>y):
+        print(f"{x} is greater than {y}")
+    else:
+        print(f"{y} is greater than {x}")
 
 # if(x<y):  
 

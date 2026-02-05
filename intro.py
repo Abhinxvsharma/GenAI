@@ -113,19 +113,19 @@
 # print(b)
 
 # id concept 
-i=10
-j=10
-print(id(i))
-print(id(j))
-print("-----")
-k='hi'
-l='hi'
-print(id(k))
-print(id(l))
+# i=10
+# j=10
+# print(id(i))
+# print(id(j))
+# print("-----")
+# k='hi'
+# l='hi'
+# print(id(k))
+# print(id(l))
 
-# i=int(input("enter i "))
-# j=int(input("enter j "))
-i=input("enter i ")
-j=input("enter j ")
-print(id(i))
-print(id(j))
+# # i=int(input("enter i "))
+# # j=int(input("enter j "))
+# i=input("enter i ")
+# j=input("enter j ")
+# print(id(i))
+# print(id(j))
