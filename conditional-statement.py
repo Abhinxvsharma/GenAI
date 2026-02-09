@@ -12,7 +12,7 @@
 # else:
 #     print("y is odd")
 
-# # Example of if-elif-else statement
+# Example of if-elif-else statement
 # z = 0
 # if (z > 0):
 #     print("z is positive")
