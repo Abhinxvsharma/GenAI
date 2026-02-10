@@ -21,3 +21,32 @@
 # print (s)
 
 # q6
+# list=["apple", "banana", "cherry"]
+# for i in enumerate(list):
+#     print(i)
+
+# q7
+# list=["apple", "banana", "cherry"]
+# for i in enumerate(list,(1)):
+#     print(i)
+
+# q8
+# students = [("John"), ("Emma"), ("Sam")]
+# x="Emma"
+# for i,j in enumerate(students):
+#     if j==x:
+#         print(i)
+    
+#q9 
+# y=[10, 20, 30]
+# s=list(map(lambda x: x[0] * x[1], enumerate(y)))
+# print(s)
+
+# q10
+# list =[5, 10, 15, 20, 25]
+# for i, j in enumerate(list):
+#     if i%2==0:
+#         print(j)
+
+
+  

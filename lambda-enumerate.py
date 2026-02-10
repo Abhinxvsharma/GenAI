@@ -27,7 +27,7 @@
 
 
 # # Enumerate function 
-# l=[12,35,11,10,4,32]
+# l=["apple", "banana", "cherry"]
 # l2=[23,45,67,89]
 # print(l)
 # for i in enumerate(l):
@@ -42,9 +42,9 @@
 #     print(i,"--",j)
 
 #map function - map(function, iterable)
-# numbers = [1, 2, 3, 4]
-# squares = list(map(lambda x: x*x, numbers))
-# print(squares)
+numbers = [1, 2, 3, 4]
+squares = list(map(lambda x: x*x, numbers))
+print(squares)
 
 # # filter function - filter(function, iterable)
 # numbers = [1, 2, 3, 4, 5]
