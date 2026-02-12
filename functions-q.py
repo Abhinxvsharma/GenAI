@@ -44,7 +44,7 @@
 #     numbers.sort()          
 #     return numbers[-2]      
 
-# n= [10, 20, 30, 40, 50]
+# n= [10, 20, 30, 70, 50]
 
 # result = second_largest(n)
 # print("Second largest element is:", result)

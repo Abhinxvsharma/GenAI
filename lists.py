@@ -27,7 +27,7 @@
 #append and extend
 # l.append(33)
 # l.append([16,17,'abhinav','jasbir'])
-# print(l)
+print(l)
 
 # l.extend([16,17,'abhinav','jasbir'])
 # print(l)
