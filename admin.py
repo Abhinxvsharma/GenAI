@@ -4,7 +4,6 @@ data=[
     { "name": "Back to the Future", "year": 1985, "duration": 114, "genres": ["Adventure", "Comedy", "Sci-Fi"] }
 ]
 
-
 def input_int(prompt):
     while True:
         value=input(prompt)
@@ -25,7 +24,7 @@ def input_something(prompt):
 print("Welcome to the movie manager")     
 
 while True:
-    print("Choose [a]dd, [l]ist, [s]earch, [v]iew, [d]elete or [q]uit.")      
+    print("\nChoose [a]dd, [l]ist, [s]earch, [v]iew, [d]elete or [q]uit.")      
     choice=input("Enter your choice: ").lower()     
 
     if choice=="a":
@@ -93,6 +92,7 @@ while True:
 
     elif choice=="q":
         print("goodbye")
+        break
 
     else:
         print("invalid choice")
