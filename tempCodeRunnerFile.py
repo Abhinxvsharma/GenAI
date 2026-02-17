@@ -1,3 +1,3 @@
-f=open('abhinav.txt','r') # r- read 
-# print(f.read())
-# f.close()
+numbers = [1, 2, 3, 4]
+# squares = list(map(lambda x: x*x, numbers))
+# print(squares)

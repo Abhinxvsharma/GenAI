@@ -35,16 +35,16 @@
 # for i,j in enumerate(l):
 #     print(i,"--",j)
 
-# di= {'name':'Sourav','class':'btech','rollno':123}
-# for i in di.items():
-#     print(i)
-# for i,j in enumerate(di.items()):  # .keys or .values
-#     print(i,"--",j)
+di= {'name':'Sourav','class':'btech','rollno':123}
+for i in di.items():
+    print(i)
+for i,j in enumerate(di.items()):  # .keys or .values
+    print(i,"--",j)
 
 #map function - map(function, iterable)
-numbers = [1, 2, 3, 4]
-squares = list(map(lambda x: x*x, numbers))
-print(squares)
+# numbers = [1, 2, 3, 4]
+# squares = list(map(lambda x: x*x, numbers))
+# print(squares)
 
 # # filter function - filter(function, iterable)
 # numbers = [1, 2, 3, 4, 5]
