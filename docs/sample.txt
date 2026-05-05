@@ -1,0 +1,2 @@
+This is a sample document for testing the ingestion pipeline.
+It contains some text that will be split into chunks and embedded.
