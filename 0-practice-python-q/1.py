@@ -42,4 +42,13 @@
 
 # print("reversed string:",reversed_string)
 
-# 5. 
+# 5. Find Factorial of a Number
+
+# n=int(input("Enter the number : "))
+
+# factorial=1
+
+# for i in range(1,n+1):
+#     factorial *=i
+
+# print ("factorial is", factorial)
