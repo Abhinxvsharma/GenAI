@@ -27,9 +27,9 @@ template = '''
 Always answer the question according to the user's context the way he/she wants.
 If user asks for a term out of cyber security, answer that sorry i am not trained to answer that question. Always answer in a concise manner.
 
-User: {user_input}
+# User: {user_input}
 
-'''
+ '''
 
 
 #using prommpt template
