@@ -1,3 +1,4 @@
+from langchain_core import prompts
 import streamlit as st
 
 from langchain_ollama import ChatOllama
@@ -51,4 +52,8 @@ if st.button("Hanji Dasso"):
         prompt=template.invoke({"user_input": user})  #yeh prompt template ke liye hai
         output = llm.invoke(prompt)
         st.write(f"Bot: {output.content}")    
+
+    
+
+
 

@@ -11,3 +11,4 @@ dotenv
 ChatOllama
 langchain_core.prompts
 PromptTemplate
+torchvision

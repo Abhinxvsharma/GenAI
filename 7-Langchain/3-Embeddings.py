@@ -8,7 +8,7 @@ import os
 load_dotenv()
 
 os.getenv("OPENAI_API_KEY", "No API key found")
-# with open("file.txt",'w') as f:
+# with open("file.txt",'w') as f:           // This is just a test to check if the file is created successfully.
 #     f.write("hello world")
 
 
@@ -33,13 +33,16 @@ os.getenv("OPENAI_API_KEY", "No API key found")
 
 # embeddings=OllamaEmbeddings(model="nomic-embed-text:latest")
 
-text="LangChain is a powerful framework for building applications with language models."
+# text="LangChain is a powerful framework for building applications with language models."
 # vector=embeddings.embed_query(text)
 # print("Embedding vector:",vector)
 
+# text="LangChain is a powerful framework for building applications with language models."
+# embedding=HuggingFaceEmbeddings(model="sentence-transformers/all-MiniLM-L6-v2")
+# vector=embedding.embed_query(text)
 
-embedding=HuggingFaceEmbeddings(model="sentence-transformers/all-MiniLM-L6-v2")
-vector=embedding.embed_query(text)
+# print("Embedding vector:",vector)
 
-print("Embedding vector:",vector)
+
+
 
