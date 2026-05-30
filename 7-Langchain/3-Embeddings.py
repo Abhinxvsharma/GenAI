@@ -37,11 +37,11 @@ os.getenv("OPENAI_API_KEY", "No API key found")
 # vector=embeddings.embed_query(text)
 # print("Embedding vector:",vector)
 
-# text="LangChain is a powerful framework for building applications with language models."
-# embedding=HuggingFaceEmbeddings(model="sentence-transformers/all-MiniLM-L6-v2")
-# vector=embedding.embed_query(text)
+text="LangChain is a powerful framework for building applications with language models."
+embedding=HuggingFaceEmbeddings(model="sentence-transformers/all-MiniLM-L6-v2")
+vector=embedding.embed_query(text)
 
-# print("Embedding vector:",vector)
+print("Embedding vector:",vector)
 
 
 

@@ -26,7 +26,3 @@ if query:
     st.write(response.content)
 
 # print(response.content)
-
-
-
-
