@@ -35,4 +35,4 @@ difficulty = st.selectbox(
 if st.button("button dabdo"):
     prompt=template.invoke({"topic": topic, "difficulty": difficulty}) 
     output = llm.invoke(prompt)
-    st.write(f"Bot: {output.content}") 
+    st.write(f"Bot: {output.content}")
