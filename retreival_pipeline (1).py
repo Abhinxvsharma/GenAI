@@ -20,7 +20,7 @@ db= Chroma(
 )
 
 #Search for relevant documents
-query = "Which island does Spacex lease for its launches in the Pacific ??"
+query = input("Enter your query: ")
 
 retreiver= db.as_retriever(search_kwargs={"k":3})
 
