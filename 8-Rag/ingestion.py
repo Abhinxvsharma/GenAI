@@ -38,7 +38,7 @@ def load_documents(doc_path="docs"):
     
     return documents
 
-def chunk_documents(documents,chunk_size=800,chuk_overlap=100):
+def chunk_documents(documents,chunk_size=200,chuk_overlap=20):
     text_splitter=RecursiveCharacterTextSplitter(chunk_size=chunk_size,chunk_overlap=chuk_overlap)
     
     chunks=text_splitter.split_documents(documents)
@@ -70,9 +70,9 @@ def create_vector_store(chunks, persist_directory="db/chroma_db"):
 
     return vector_store
 if __name__=="__main__":
-    # documents=load_documents()
-    # chunks=chunk_documents(documents)
-    # create_vector_store(chunks, persist_directory)
+    documents=load_documents()
+    chunks=chunk_documents(documents)
+    create_vector_store(chunks, persist_directory)
     
     vector_store = Chroma(persist_directory=persist_directory, embedding_function=embedding_model)
     
