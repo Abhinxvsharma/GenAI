@@ -4,11 +4,5 @@ langchain-ollama
 langchain-openai
 streamlit
 langchain-huggingface
-ChatPromptTemplate
-HuggingFaceEndpoint
-ChatHuggingFace
 dotenv
-ChatOllama
-langchain_core.prompts
-PromptTemplate
 torchvision

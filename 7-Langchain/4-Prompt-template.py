@@ -3,7 +3,7 @@ from langchain_core.prompts import PromptTemplate
 from langchain_ollama import ChatOllama
 
 # Load Model
-llm = ChatOllama(model="phi3:mini",temperature=0.9,max_output_tokens=100,max_input_tokens=1000,max_tokens=250)
+llm = ChatOllama(model="phi3:mini",temperature=0.4,max_output_tokens=100,max_input_tokens=1000,max_tokens=250)
 
 # Prompt Template
 template = PromptTemplate(
