@@ -2,8 +2,8 @@ from rank_bm25 import BM25Okapi
 
 corpus = [
     "Hello there good man!",
-    "What is the weather today of ludhiana",
-    "The weather of ludhiana today is very humid"
+    "What is the weather today of Ludhiana",
+    "The weather of Ludhiana today is very humid"
 ]
 
 tokenized_corpus = [doc.lower().split(" ") for doc in corpus]
