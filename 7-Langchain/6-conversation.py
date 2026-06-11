@@ -3,7 +3,7 @@ from langchain_classic.memory import ConversationBufferMemory,ConversationSummar
 from langchain_classic.chains import ConversationChain
 
 # LLM
-llm = ChatOllama(model="phi3:mini",temperature=0.5)
+llm = ChatOllama(model="llama3.2:latest",temperature=0.1)
 
 # while True:
 #     user=input("Enter your query :")
@@ -26,13 +26,16 @@ conversation = ConversationChain(
 
 
 while True:
-    user=input("Enter your query :")
-    if user.lower()=='exit':
+    user = input("Enter your query : ")
+
+    if user.lower() == 'exit':
         break
 
-    elif user.lower()=='history':
+    elif user.lower() == 'history':
         print(memory.buffer)
-    response=conversation.predict(input=user)
+        continue
+
+    response = conversation.predict(input=user)
     print(response)
 # Chat
 # print(conversation.predict(input="Hi"))
