@@ -6,10 +6,10 @@ from langchain_core.prompts import PromptTemplate
 from langchain_ollama import ChatOllama
 from langchain_core.runnables import RunnablePassthrough, RunnableSequence
 
-llm = ChatOllama(model="phi3:mini",temperature=0.5)
+llm = ChatOllama(model="llama3.2:latest",temperature=0.2)
 
 # output_parser=CommaSeparatedListOutputParser()
-output_parser=StrOutputParser()
+# output_parser=StrOutputParser()
 # prompt = PromptTemplate(
 #     template="""
 #     List 5 programming languages.
@@ -80,49 +80,49 @@ SequentialChain
 from langchain_classic.chains import LLMChain
 from langchain_classic.chains import SimpleSequentialChain
 
-title_prompt=PromptTemplate(
-    input_variables=["topic"],
-    template="Generate the catchy title about he blog on the {topic}"
-)
+# title_prompt=PromptTemplate(
+#     input_variables=["topic"],
+#     template="Generate the catchy title about he blog on the {topic}"
+# )
 
 
-# chain=title_prompt | llm | StrOutputParser()
-chain= LLMChain(llm=llm,prompt=title_prompt)
-result=chain.invoke("Artificial Intelligence")
-print(result)
+# # chain=title_prompt | llm | StrOutputParser()
+# chain= LLMChain(llm=llm,prompt=title_prompt)
+# result=chain.invoke("Artificial Intelligence")
+# print(result)
 
 
-title_prompt = PromptTemplate(
-    input_variables=["topic"],
-    template="Generate a blog title about {topic}"
-)
+# title_prompt = PromptTemplate(
+#     input_variables=["topic"],
+#     template="Generate a blog title about {topic}"
+# )
 
-title_chain = LLMChain(
-    llm=llm,
-    prompt=title_prompt
-)
+# title_chain = LLMChain(
+#     llm=llm,
+#     prompt=title_prompt
+# )
 
-# Chain 2: Generate Paragraph
-paragraph_prompt = PromptTemplate(
-    input_variables=["title"],
-    template="Write a short paragraph about this blog title:\n{title}"
-)
+# # Chain 2: Generate Paragraph
+# paragraph_prompt = PromptTemplate(
+#     input_variables=["title"],
+#     template="Write a short paragraph about this blog title:\n{title}"
+# )
 
-paragraph_chain = LLMChain(
-    llm=llm,
-    prompt=paragraph_prompt
-)
+# paragraph_chain = LLMChain(
+#     llm=llm,
+#     prompt=paragraph_prompt
+# )
 
-# Sequential Chain
-chain = SimpleSequentialChain(
-    chains=[title_chain, paragraph_chain],
-    verbose=True
-)
+# # Sequential Chain
+# chain = SimpleSequentialChain(
+#     chains=[title_chain, paragraph_chain],
+#     verbose=True
+# )
 
-result = chain.invoke("Artificial Intelligence")
+# result = chain.invoke("Artificial Intelligence")
 
-print("\nFinal Output:")
-print(result)
+# print("\nFinal Output:")
+# print(result)
 
 
 
