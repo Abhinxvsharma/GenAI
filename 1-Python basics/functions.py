@@ -86,7 +86,7 @@
 #     l.append(a)    
 # print(listSum(l))
 
-#print("------------------")
+# print("------------------")
 
 # args -  keyword arguments  *a
 # def sumRet(*a):
@@ -104,7 +104,7 @@
 # print(sumRet(45,56,10,23,56,78,98))
 
 
-#** kwargs  - keyword abitrary arguments
+# ** kwargs  - keyword abitrary arguments
 # def sumRet(**a):
 #     print(a)
 #     sum=0
